@@ -1,6 +1,6 @@
 # Northwind API Project
 
-This repository contains a RESTful API project built with ASP.NET Web API, providing endpoints to interact with the Northwind sample database.
+This repository contains a RESTful API project built with ASP.NET Core Web API, providing endpoints to interact with the Northwind sample database.
 
 ## Overview
 
