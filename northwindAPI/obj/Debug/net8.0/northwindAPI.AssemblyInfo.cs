@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("northwindAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f8924684c225b545c0d6978bc5fce7ec7e1d5fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("northwindAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("northwindAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
