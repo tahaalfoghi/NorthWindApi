@@ -4,7 +4,7 @@ This repository contains a RESTful API project built with ASP.NET Web API, provi
 
 ## Overview
 
-The Northwind database is a commonly used database for learning and practicing SQL and database-related concepts. This project exposes various endpoints to perform CRUD operations on entities within the Northwind database such as Customers, Products, Orders, etc.
+The Northwind database is a commonly used database for learning and practicing SQL and database-related concepts. This project exposes various endpoints to perform CRUD operations on entities within the NorthWind database such as Customers, Products, Orders, etc.
 
 ## Features
 
@@ -19,5 +19,9 @@ The API supports various endpoints such as:
 - `POST /api/customers` - Create a new customer.
 - `GET /api/orders` - Retrieve all orders.
 - `PUT /api/orders/{id}` - Update an order by ID.
+- `Patch /api/Customer/UpdatePatch` - Update Customer by Id choose the field to update only not all the fields should be updated. in this way:- 
+"path": "string", # the column you want to update
+"op": "string", # op must be replace
+"value": "string"  # new value
 
 For detailed API documentation, visit [Swagger UI](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0) after running the application.
