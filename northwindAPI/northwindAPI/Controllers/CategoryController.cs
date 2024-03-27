@@ -124,7 +124,7 @@ namespace northwindAPI.Controllers
             return Ok(record.CategoryId);
         }
         [HttpPatch]
-        [Route("updatePatch")]
+        [Route("updatePatch {id}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]

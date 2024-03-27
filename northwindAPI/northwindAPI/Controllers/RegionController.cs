@@ -108,7 +108,7 @@ namespace northwindAPI.Controllers
             return Ok(record.RegionId);
         }
         [HttpPatch]
-        [Route("updatePatch")]
+        [Route("updatePatch {id}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]

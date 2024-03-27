@@ -122,7 +122,7 @@ namespace northwindAPI.Controllers
             return Ok();
         }
         [HttpPatch]
-        [Route("updatePatch")]
+        [Route("updatePatch {id}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
