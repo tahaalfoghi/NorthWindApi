@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using northwindAPI.Models;
 using northwindAPI.PatternService.UnitOfWork;
@@ -53,6 +55,11 @@ namespace northwindAPI.PatternService.Repository
         {
             var record = await GetById(id);
             _context.Entry(record).CurrentValues.SetValues(entity);
+        }
+
+        public Task UpdatePatchAsync(int id, [FromBody] JsonPatchDocument<TEntity> patch)
+        {
+            throw new NotImplementedException();
         }
     }
 }

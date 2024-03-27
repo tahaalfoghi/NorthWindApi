@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using northwindAPI.Data.ModelDTO;
 using northwindAPI.Models;
@@ -105,6 +106,27 @@ namespace northwindAPI.Controllers
             await _uow.SaveChangeAsync(token);
 
             return Ok();
+        }
+        [HttpPatch]
+        [Route("updatePatch")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public async Task<ActionResult> UpdatePatchAsync(int id, [FromBody] JsonPatchDocument<SupplierDTO> patch,CancellationToken token)
+        {
+            var record  = await _repo.GetById(id);
+            if(record is null || !ModelState.IsValid)
+            throw new Exception($"record  with id:{id} not found or model is invalid");
+
+            var dto_record = _mapper.Map<SupplierDTO>(record);
+            patch.ApplyTo(dto_record,ModelState);
+
+            var supplier = _mapper.Map<Supplier>(dto_record);
+            await _repo.UpdateAsync(id,supplier);
+            await _uow.SaveChangeAsync(token);
+            
+            return Ok(supplier.SupplierId);
         } 
     }
 }

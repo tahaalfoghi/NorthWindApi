@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using northwindAPI.Data.ModelDTO;
@@ -105,6 +106,27 @@ namespace northwindAPI.Controllers
             await _uow.territoryRepository.DeleteAsync(id);
             await _uow.SaveChangeAsync(token);
             return Ok(record.TerritoryId);
+        }
+        [HttpPatch]
+        [Route("updatePatch")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public async Task<ActionResult> UpdatePatchAsync(string id, [FromBody] JsonPatchDocument<TerritoryDTO> patch,CancellationToken token)
+        {
+            var record  = await _uow.territoryRepository.GetByIdAsync(id);
+            if(record is null || !ModelState.IsValid)
+            throw new Exception($"record  with id:{id} not found or model is invalid");
+
+            var dto_record = _mapper.Map<TerritoryDTO>(record);
+            patch.ApplyTo(dto_record,ModelState);
+
+            var territory = _mapper.Map<Territory>(dto_record);
+            await _uow.territoryRepository.UpdateAsync(id,territory);
+            await _uow.SaveChangeAsync(token);
+            
+            return Ok(territory.TerritoryId);
         }
     }
 }

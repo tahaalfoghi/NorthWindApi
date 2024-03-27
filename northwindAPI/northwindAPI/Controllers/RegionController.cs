@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using northwindAPI.Data.ModelDTO;
@@ -105,6 +106,27 @@ namespace northwindAPI.Controllers
             await _repo.DeleteAsync(id);
             await _uow.SaveChangeAsync(token);
             return Ok(record.RegionId);
+        }
+        [HttpPatch]
+        [Route("updatePatch")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public async Task<ActionResult> UpdatePatchAsync(int id, [FromBody] JsonPatchDocument<RegionDTO> patch,CancellationToken token)
+        {
+            var record  = await _repo.GetById(id);
+            if(record is null || !ModelState.IsValid)
+            throw new Exception($"record  with id:{id} not found or model is invalid");
+
+            var dto_record = _mapper.Map<RegionDTO>(record);
+            patch.ApplyTo(dto_record,ModelState);
+
+            var region = _mapper.Map<Region>(dto_record);
+            await _repo.UpdateAsync(id,region);
+            await _uow.SaveChangeAsync(token);
+            
+            return Ok(region.RegionId);
         }
     }
 }
