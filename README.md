@@ -8,7 +8,7 @@ The Northwind database is a commonly used database for learning and practicing S
 
 ## Features
 
-- **RESTful API**: Built using ASP.NET Web API, adhering to REST principles for easy consumption and integration.
+- **RESTful API**: Built using ASP.NET Core Web API, adhering to REST principles for easy consumption and integration.
 - **CRUD Operations**: Supports Create, Read, Update, and Delete operations on various entities.
 - **Validation**: Input validation to ensure data integrity and consistency.
 - **Error Handling**: Comprehensive error handling to provide meaningful responses to clients.
