@@ -59,7 +59,7 @@ namespace northwindAPI.Controllers
             return dto_record;
         }
         [HttpPatch]
-        [Route("updatePatch")]
+        [Route("updatePatch {id}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
