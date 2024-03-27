@@ -10,6 +10,7 @@ using northwindAPI.Models;
 using northwindAPI.PatternService.UnitOfWork;
 using northwindAPI.RepositoryService;
 using northwindAPI.PatternService.Repository;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace northwindAPI.Controllers
 {
@@ -119,6 +120,27 @@ namespace northwindAPI.Controllers
 
             await _uow.customerRepository.DeleteAsync(id);
             return Ok();
+        }
+        [HttpPatch]
+        [Route("updatePatch")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public async Task<ActionResult> UpdatePatchAsync(string id, [FromBody] JsonPatchDocument<CustomerDTO> patch,CancellationToken token)
+        {
+            var record  = await _repo.GetAsync(x=>x.CustomerId == id);
+            if(record is null || !ModelState.IsValid)
+            throw new Exception($"record  with id:{id} not found or model is invalid");
+
+            var dto_record = _mapper.Map<CustomerDTO>(record);
+            patch.ApplyTo(dto_record,ModelState);
+
+            var customer = _mapper.Map<Customer>(dto_record);
+            await _uow.customerRepository.UpdateAsync(id,customer);
+            await _uow.SaveChangeAsync(token);
+            
+            return Ok(customer.CustomerId);
         }
     }
 }
