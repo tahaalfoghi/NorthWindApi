@@ -1,0 +1,72 @@
+2024-03-29 18:33:03.993 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-29 18:33:04.066 +02:00 [DBG] Hosting starting
+2024-03-29 18:33:04.100 +02:00 [INF] Now listening on: http://localhost:5056
+2024-03-29 18:33:04.100 +02:00 [DBG] Loaded hosting startup assembly northwindAPI
+2024-03-29 18:33:04.100 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-29 18:33:04.101 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-29 18:33:04.101 +02:00 [INF] Hosting environment: Development
+2024-03-29 18:33:04.101 +02:00 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\NorthWindApi\northwindAPI
+2024-03-29 18:33:04.101 +02:00 [DBG] Hosting started
+2024-03-29 18:33:40.567 +02:00 [INF] Application is shutting down...
+2024-03-29 18:33:40.569 +02:00 [DBG] Hosting stopping
+2024-03-29 18:33:40.576 +02:00 [DBG] Hosting stopped
+2024-03-29 18:33:53.003 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-29 18:33:53.063 +02:00 [DBG] Hosting starting
+2024-03-29 18:33:53.096 +02:00 [INF] Now listening on: http://localhost:5056
+2024-03-29 18:33:53.097 +02:00 [DBG] Loaded hosting startup assembly northwindAPI
+2024-03-29 18:33:53.097 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-29 18:33:53.097 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-29 18:33:53.097 +02:00 [INF] Hosting environment: Development
+2024-03-29 18:33:53.097 +02:00 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\NorthWindApi\northwindAPI
+2024-03-29 18:33:53.097 +02:00 [DBG] Hosting started
+2024-03-29 18:34:59.112 +02:00 [INF] Application is shutting down...
+2024-03-29 18:34:59.113 +02:00 [DBG] Hosting stopping
+2024-03-29 18:34:59.119 +02:00 [DBG] Hosting stopped
+2024-03-29 18:36:48.178 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-29 18:36:48.250 +02:00 [DBG] Hosting starting
+2024-03-29 18:36:48.285 +02:00 [INF] Now listening on: http://localhost:5056
+2024-03-29 18:36:48.286 +02:00 [DBG] Loaded hosting startup assembly northwindAPI
+2024-03-29 18:36:48.286 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-29 18:36:48.286 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-29 18:36:48.287 +02:00 [INF] Hosting environment: Development
+2024-03-29 18:36:48.287 +02:00 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\NorthWindApi\northwindAPI
+2024-03-29 18:36:48.287 +02:00 [DBG] Hosting started
+2024-03-29 18:38:05.250 +02:00 [INF] Application is shutting down...
+2024-03-29 18:38:05.253 +02:00 [DBG] Hosting stopping
+2024-03-29 18:38:05.269 +02:00 [DBG] Hosting stopped
+2024-03-29 18:40:13.448 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-29 18:40:13.523 +02:00 [DBG] Hosting starting
+2024-03-29 18:40:13.563 +02:00 [INF] Now listening on: http://localhost:5056
+2024-03-29 18:40:13.563 +02:00 [DBG] Loaded hosting startup assembly northwindAPI
+2024-03-29 18:40:13.563 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-29 18:40:13.564 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-29 18:40:13.564 +02:00 [INF] Hosting environment: Development
+2024-03-29 18:40:13.564 +02:00 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\NorthWindApi\northwindAPI
+2024-03-29 18:40:13.564 +02:00 [DBG] Hosting started
+2024-03-29 18:45:07.480 +02:00 [INF] Application is shutting down...
+2024-03-29 18:45:07.481 +02:00 [DBG] Hosting stopping
+2024-03-29 18:45:07.499 +02:00 [DBG] Hosting stopped
+2024-03-29 18:45:14.581 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-29 18:45:14.654 +02:00 [DBG] Hosting starting
+2024-03-29 18:45:14.692 +02:00 [INF] Now listening on: http://localhost:5056
+2024-03-29 18:45:14.692 +02:00 [DBG] Loaded hosting startup assembly northwindAPI
+2024-03-29 18:45:14.692 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-29 18:45:14.693 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-29 18:45:14.693 +02:00 [INF] Hosting environment: Development
+2024-03-29 18:45:14.693 +02:00 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\NorthWindApi\northwindAPI
+2024-03-29 18:45:14.693 +02:00 [DBG] Hosting started
+2024-03-29 18:46:01.887 +02:00 [INF] Application is shutting down...
+2024-03-29 18:46:01.889 +02:00 [DBG] Hosting stopping
+2024-03-29 18:46:01.902 +02:00 [DBG] Hosting stopped
+2024-03-29 18:48:43.607 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-29 18:48:43.689 +02:00 [DBG] Hosting starting
+2024-03-29 18:48:43.728 +02:00 [INF] Now listening on: http://localhost:5056
+2024-03-29 18:48:43.728 +02:00 [DBG] Loaded hosting startup assembly northwindAPI
+2024-03-29 18:48:43.728 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-29 18:48:43.728 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-29 18:48:43.729 +02:00 [INF] Hosting environment: Development
+2024-03-29 18:48:43.729 +02:00 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\NorthWindApi\northwindAPI
+2024-03-29 18:48:43.729 +02:00 [DBG] Hosting started
+2024-03-29 18:48:52.649 +02:00 [INF] Application is shutting down...
+2024-03-29 18:48:52.650 +02:00 [DBG] Hosting stopping
+2024-03-29 18:48:52.665 +02:00 [DBG] Hosting stopped
