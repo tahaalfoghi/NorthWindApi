@@ -8,6 +8,10 @@ using northwindAPI.Middleware;
 using northwindAPI.PatternService;
 using Serilog.AspNetCore;
 using Serilog;
+using northwindAPI.northwindEFCore.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 
 
 
@@ -15,18 +19,39 @@ using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers().AddNewtonsoftJson();
+
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+builder.Services.AddSwaggerGen(options => {
+    options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme{
+        In  = ParameterLocation.Header,
+        Name ="Authorization",
+        Type = SecuritySchemeType.ApiKey,
+
+    });
+
+    options.OperationFilter<SecurityRequirementsOperationFilter>();
+});
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
+    .WriteTo.Debug()
+    .WriteTo.Console()
     .WriteTo.File("Log/log.txt",rollingInterval:RollingInterval.Minute).CreateLogger();
 
 
 builder.Services.AddDbContext<AppDbContext>(
     op => op.UseSqlServer(builder.Configuration.GetConnectionString("constr")));
-//builder.Services.AddLogging(loggingBuilder =>loggingBuilder .AddDebug());
-// Ensure you're referencing the correct AddAutoMapper method
+
+builder.Services.AddDbContext<UserDbContext>(op=> op.UseSqlServer(
+    builder.Configuration.GetConnectionString("constr")
+));
+
+builder.Services.AddAuthorization();
+
+builder.Services.AddIdentityApiEndpoints<IdentityUser>()
+.AddEntityFrameworkStores<UserDbContext>().AddApiEndpoints(); 
+
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Services.AddScoped(typeof(IRepository<>),typeof(RepositoryBase<>));
 builder.Services.AddScoped(typeof(IUnitOfWork),typeof(UnitOFWork));
@@ -44,9 +69,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
 app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
 app.UseHttpsRedirection();
+app.MapIdentityApi<IdentityUser>();
 app.UseExceptionHandler();
 app.MapControllers();
-
 app.Run();

@@ -11,9 +11,11 @@ using northwindAPI.PatternService.UnitOfWork;
 using northwindAPI.RepositoryService;
 using northwindAPI.PatternService.Repository;
 using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Authorization;
 
 namespace northwindAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CustomerController:ControllerBase

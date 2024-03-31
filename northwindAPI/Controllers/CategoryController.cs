@@ -12,11 +12,14 @@ using northwindAPI.PatternService.UnitOfWork;
 using northwindAPI.RepositoryService;
 using Azure;
 using Microsoft.AspNetCore.JsonPatch;
+using Microsoft.AspNetCore.Authorization;
 
 namespace northwindAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
+    
     public class CategoryController:ControllerBase
     {
         private readonly IUnitOfWork _uow;
@@ -37,8 +40,10 @@ namespace northwindAPI.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
+        
         public async Task<ActionResult<IEnumerable<CategoryDTO>>> GetAllAsync()
         {
+            _logger.LogDebug("Getting all Categories");
             var records = await _repo.GetAllAsync();
             if(records is null)
             {
@@ -56,6 +61,7 @@ namespace northwindAPI.Controllers
         [ProducesResponseType(500)]
         public async Task<ActionResult<CategoryDTO>> GetById(int id)
         {
+            _logger.LogDebug("Getting category #{id}",id);
             var record = await _repo.GetById(id);
             if(record is null)
             {
