@@ -12,6 +12,7 @@ using northwindAPI.northwindEFCore.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
+using northwindAPI.EFCore.Data.Models;
 
 
 
@@ -49,7 +50,7 @@ builder.Services.AddDbContext<UserDbContext>(op=> op.UseSqlServer(
 
 builder.Services.AddAuthorization();
 
-builder.Services.AddIdentityApiEndpoints<IdentityUser>()
+builder.Services.AddIdentityApiEndpoints<User>()
 .AddEntityFrameworkStores<UserDbContext>().AddApiEndpoints(); 
 
 builder.Services.AddAutoMapper(typeof(MapperConfig));
@@ -70,11 +71,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseHttpsRedirection();
-app.MapIdentityApi<IdentityUser>();
+app.MapIdentityApi<User>();
 app.UseExceptionHandler();
 app.MapControllers();
 app.Run();
